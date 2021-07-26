@@ -2,7 +2,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-07-21 21:40:57
- * @LastEditTime: 2021-07-24 21:46:38
+ * @LastEditTime: 2021-07-26 21:07:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /html-demo-2/index.html
@@ -13,7 +13,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>周杰伦</title>
 	<style>
 		img {
@@ -23,14 +24,25 @@
 </head>
 
 <body>
-	<h1>周杰伦</h1>
+	<nav>
+		<ol>
+			<li><a href="#jay">个人简介</a></li>
+			<li><a href="#events">重要事件</a></li>
+			<li><a href="#awards">成就和荣誉</a></li>
+			<li><a href="#works">主要作品</a></li>
+			<li><a href="#pictures">生活照</a></li>
+			<li><a href="#life">生平</a></li>
+		</ol>
+	</nav>
+
+	<h1 id="jay">周杰伦</h1>
 	<p>
 		英文名Jay
 		Chou，1979年1月18日出生于台湾省新北市，祖籍福建省泉州市永春县，华语流行乐男歌手、原创音乐人、演员、导演、编剧，毕业于淡江中学。
 		2000年发行首张个人专辑《Jay》。
 	</p>
 
-	<h2>重要事件</h2>
+	<h2 id="events">重要事件</h2>
 	<ul>
 		<li>2002年举行“TheOne”世界巡回演唱会。</li>
 		<li>2003年成为美国《时代周刊》封面人物。</li>
@@ -39,14 +51,13 @@
 		<li>2006年起连续三年获得世界音乐大奖中国区最畅销艺人奖。</li>
 	</ul>
 
-	<h2>成就和荣誉</h2>
+	<h2 id="awards">成就和荣誉</h2>
 	<ul>
 		<li>2009年入选美国CNN评出的“25位亚洲最具影响力人物”。</li>
 		<li>2010年入选美国《Fast Company》评出的“全球百大创意人物”。</li>
 	</ul>
 
-	<h2>主要作品</h2>
-
+	<h2 id="works">主要作品</h2>
 	<table>
 		<thead>
 			<tr>
@@ -90,15 +101,26 @@
 		</tbody>
 	</table>
 
-	<h2>生活照</h2>
+	<h2 id="pictures">生活照</h2>
 
 
-	<div><img width="400" src="images/1.jpeg" alt="图一"></div>
-	<div><img width="400" src="images/2.jpeg" alt="图二"></div>
-	<div><img width="400" src="images/3.jpeg" alt="图三"></div>
+	<div>
+		<a href="images/1.jpeg" target="_blank">
+			<img width="400" src="images/1.jpeg" alt="图一">
+		</a>
+	</div>
+	<div>
+		<a href="images/2.jpeg" target="_blank">
+			<img width="400" src="images/2.jpeg" alt="图一">
+		</a>
+	</div>
+	<div>
+		<a href="images/3.jpeg" target="_blank">
+			<img width="400" src="images/3.jpeg" alt="图一">
+		</a>
+	</div>
 
-
-	<h2>生平</h2>
+	<h2 id="life">生平</h2>
 	<p>
 		周杰伦出生于台湾省新北市，祖籍福建省泉州市永春县 。
 		周杰伦4岁的时候，母亲叶惠美把他送到淡江山叶幼儿音乐班学习钢琴。
@@ -107,6 +129,7 @@
 		中考时，周杰伦没有考上普通高中；同年，他因为擅长钢琴而被淡江中学第一届音乐班录取。
 		高中毕业以后，他两次报考台北大学音乐系均没有被录取，于是他开始在一家餐馆打工。
 	</p>
+	<!-- <div style=height:600px></div> -->
 
 </body>
 
